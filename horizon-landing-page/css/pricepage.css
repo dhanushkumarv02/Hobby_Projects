@@ -1,0 +1,248 @@
+.price-page {
+    background-color: lightgrey;
+    text-transform: capitalize;
+
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+}
+
+li{
+    list-style-type: none;
+}
+
+.three-in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+}
+
+.first-box{
+    height: 550px;
+    width: 330px;
+}
+.first-box h2{
+    font-size: 30px;
+    margin-bottom:20px ;
+    
+}
+.first-box hr{
+    width: 55px;
+    border: 1px solid #39B54A;
+    margin-bottom: 20px;
+}
+.first-box p{
+    font-size: 20px;
+    width: 300px;
+    line-height: 32px;
+    
+}
+.second-box{
+    background-color: white;
+    height: 550px;
+    width: 330px;
+
+    border-radius: 20px;
+}
+.second-box h2, 
+.third-box h2{
+    font-size: 25px;
+    text-align: center;
+
+    margin: 35px 0;
+}
+
+.price-display{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+    margin-top: 20px;
+}
+.price-doller{
+    font-size: 18px;
+    align-self: flex-start;
+}
+.price-num{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.second-box p,
+.third-box p{
+    text-align: center;
+    font-size: 17px;
+
+    margin-bottom:40px;
+}
+.second-box hr{
+    width: 200px;
+    border:1px solid rgb(248, 242, 242);
+    margin: 15px auto;
+}
+.third-box hr{
+    width: 200px;
+    border:1px solid rgb(179, 179, 179);
+    margin: 15px auto;
+}
+.third-box span{
+    color: white;
+}
+ul{
+    text-align: center;
+}
+.third-box{
+    background-color:#39B54A;
+    height: 550px;
+    width: 330px;
+    border-radius: 20px;
+}
+
+.second-box button {
+    background-color: #39B54A;
+    border: none;
+    
+    padding:20px 30px;
+    border-radius: 3px;
+    color: white;
+    font-size: 17px;
+
+    display: block;
+    margin: 25px auto 10px;
+    cursor: pointer;
+}
+.third-box button{
+    background-color: #ffffff;
+    border: none;
+    
+    padding:20px 30px;
+    border-radius: 3px;
+    color: #39B54A;
+    font-size: 17px;
+
+    display: block;
+    margin: 25px auto 10px;
+    cursor: pointer;
+
+}
+
+.second-box, 
+.third-box {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+    transition: all 0.2 ease-in-out;
+}
+.second-box button:hover, 
+.third-box button:hover{
+    opacity: 0.6;
+}
+.second-box button:active, 
+.third-box button:active{
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2) inset;
+}
+
+
+
+
+/* pageTestimonials-section */
+
+.Testimonials-section {
+    text-transform: capitalize;
+    margin: 200px 0 105px ;
+}
+.Testimonials-section .slides{
+    position: relative;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.slide {
+    display: none;
+    padding: 20px;
+    margin:0 auto;
+
+    line-height: 33px;
+    width: 700px;
+}
+#slide1:checked ~ .slides .slide1 {
+    display: block;
+}
+#slide2:checked ~ .slides .slide2 {
+    display: block;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 20px;
+}
+.dot {
+    height: 12px;
+    width: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+#slide1:checked ~ .dots label[for="slide1"],
+#slide2:checked ~ .dots label[for="slide2"] {
+    background-color: #39B54A;
+}
+
+.Testimonials-section h3{
+    font-size: 35px;
+    text-align: center;
+    margin: 55px auto;
+}
+
+.slides .slide p{
+    font-size: 26px;
+    font-family: monospace, arial;
+    
+}
+
+.author img{
+    width: 80px;
+    border-radius: 50%;
+
+    display: block;
+    margin: 25px auto 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.author div {
+    text-align: center;
+    margin: 5px auto;
+}
+
+@media (max-width: 900px) {
+    .three-in{
+        flex-direction: column;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .first-box,.second-box,.third-box{
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .first-box p{
+        width: 300px;
+    }
+}
+
+@media (max-width:178px) {
+    .Testimonials-section h3{
+    font-size: 20px;
+    margin: 55px auto;
+}
+
+.slides .slide p{
+    font-size: 10px;
+    width: 150px;
+    font-family: monospace, arial;  
+}  
+}

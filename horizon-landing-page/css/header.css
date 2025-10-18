@@ -1,0 +1,70 @@
+.top-head{
+    height: 70px;
+    width: min(1050px, 100%);
+    border: 1px solid black;
+
+    background-color: black;
+    color: white;
+
+    border-radius: 0px 0px 5px 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding:0px 40px;
+    margin: 0 auto;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    z-index: 10000000;
+}
+
+.web-name-left p{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.web-name-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+}
+.web-name-right a{
+    font-size: 16px;
+
+    color: rgb(216, 216, 216);
+    text-decoration: none;
+}
+.web-name-right a:hover{
+    text-decoration: underline;
+    color:rgb(57, 181, 74);
+    transform: 0.3s;
+}
+
+.sign-up-page{
+    background-color: rgb(57, 181, 74);
+    color: rgb(255, 255, 255);
+
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+.sign-up-page:hover{
+    background-color: white;
+    color: black;
+}
